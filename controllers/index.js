@@ -1,7 +1,7 @@
 var express = require('express')
 var router = new express.Router()
 
-router.use('/films'), require('./films')
+router.use('/films'), require('./films.js')
 
 router.get('/', function(req, res){
   res.sendFile(path.join(__dirname + '/client/build/index.html'))
